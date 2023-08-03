@@ -1,12 +1,12 @@
 import React from 'react'
 
 const LiAndAnchor = (props) => {
-    
-    const {value, content} = props
+
+    const { value, content, active } = props
 
     return (
         <li>
-            <a className='text-white bg-[rgba(255,255,255,0.2)] rounded-lg p-1 border-white border hover:bg-[rgba(255,255,255,0.6)] transition-all duration-500' href={value}>{content}</a>
+            <a className='text-xl text-gray-500 hover:text-white transition-all duration-500' style={active ? { color: 'white' } : {}} href={value}>{content}</a>
         </li>
     )
 }
