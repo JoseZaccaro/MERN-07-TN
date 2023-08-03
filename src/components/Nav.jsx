@@ -5,12 +5,12 @@ const Nav = ({ links }) => {
 
     return (
         <nav>
-            <ul className='flex gap-4'>
+            <ul className='flex gap-6'>
                 {
                     links.map((link, indice) => {
                         return (
                             <Fragment key={indice}>
-                                <LiAndAnchor value={link.value} content={link.content} />
+                                <LiAndAnchor value={link.value} active={link.active} content={link.content} />
                             </Fragment>
                         )
                     })

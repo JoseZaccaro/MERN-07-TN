@@ -16,7 +16,7 @@ const links = [
 const MainLayout = ({ children }) => {
 
     return (
-        <div className='w-full bg-gray-200 min-h-screen flex flex-col'>
+        <div className='w-full min-h-screen flex flex-col items-center bg-[#212529]'>
             <Header />
             {
                 children

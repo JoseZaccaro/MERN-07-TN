@@ -1,11 +1,11 @@
 import React from 'react'
-import reactLogo from '../assets/react.svg'
+// import LogoAE from '../assets/.svg'
 
 const Logo = () => {
     return (
-        <section className='flex justify-center items-center h-full'>
-            <h1 className='font-semibold text-2xl text-white'>MYTINERARY</h1>
-            <img className='h-6 mx-4' src={reactLogo} alt="react" />
+        <section className='flex justify-center items-center h-full gap-2 flex-row-reverse'>
+            {/* <h1 className='font-semibold text-md text-white uppercase'>Amazing events</h1> */}
+            <img className='max-h-full py-1 cursor-pointer' src={'./Logo.png'} alt="react" />
         </section>
 
     )
