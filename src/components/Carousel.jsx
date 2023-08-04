@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import Arrow from './Arrow'
 
 const images = [
@@ -35,6 +35,24 @@ const Carousel = () => {
   const setBullet = (indice) => {
     setIndex(indice)
   }
+
+  useEffect(() => {
+    let intervalID = setInterval(() => {
+      // pasa al siguiente numero infinitamente
+      // setIndex((pre) => pre + 1)
+      // Pasa a la siguiente imagen en loop
+      // prev()
+      // Pasa a la anterior imagen en loop
+      // next()
+    }, 1000)
+
+    return () => {
+      // console.log('Me desmonté')
+      // console.log('last time: ' + hour)
+      clearInterval(intervalID)
+    }
+
+  }, [index])
 
 
   return (
