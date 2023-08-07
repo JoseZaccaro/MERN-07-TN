@@ -1,7 +1,7 @@
 import React from 'react'
-import Hero from '../layouts/Hero'
 import Button from '../components/Button'
 import Carousel from '../components/Carousel'
+import Hero from '../layouts/Hero'
 
 const Home = () => {
   return (

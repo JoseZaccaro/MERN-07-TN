@@ -43,11 +43,12 @@ const Carousel = () => {
       // Pasa a la siguiente imagen en loop
       // prev()
       // Pasa a la anterior imagen en loop
-      // next()
+      next()
     }, 1000)
-
-    return () => {
-      // console.log('Me desmonté')
+    
+    return () => {      
+      // next()
+      console.log('Me desmonté')
       // console.log('last time: ' + hour)
       clearInterval(intervalID)
     }
