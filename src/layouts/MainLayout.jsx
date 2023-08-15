@@ -1,6 +1,7 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import Header from './../components/Header.jsx';
 import Nav from './../components/Nav.jsx';
+import { Outlet, useNavigate, useLocation } from 'react-router-dom';
 
 // import './mainLayout.css'
 
@@ -13,14 +14,19 @@ const links = [
     { value: '#', content: 'Link 4', id: '4' },
 ]
 
-const MainLayout = ({ children }) => {
+const MainLayout = () => {
+    // const navigate = useNavigate()
+    const location = useLocation()
+    console.log(location);
+    // useEffect(() => {
+    //     if (location.pathname === '/') navigate('/home')
+    // }, [])
 
     return (
         <div className='w-full min-h-screen flex flex-col items-center bg-[#212529]'>
             <Header />
-            {
-                children
-            }
+
+            <Outlet />
             {/* <footer>
                 <Nav links={links} />
             </footer> */}
