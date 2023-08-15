@@ -8,7 +8,7 @@ const Home = () => {
     <>
       <Hero>
         <div className='flex flex-col px-4 '>
-          <h2 className='text-center w-full px-[25%]'>¡Bienvenido a Amazing Events! Tu destino para las entradas más emocionantes a eventos inolvidables. ¡Prepárate para vivir momentos únicos junto a nosotros!</h2>
+          <h2 className='text-center w-full px-[10%] pb-4 text-2xl'>¡Bienvenido a Amazing Events! Tu destino para las entradas más emocionantes a eventos inolvidables. ¡Prepárate para vivir momentos únicos junto a nosotros!</h2>
           <Button />
         </div>
       </Hero>
