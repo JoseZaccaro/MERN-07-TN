@@ -15,7 +15,7 @@ const Events = () => {
   }, [])
 
   return (
-    <div className='p-10 w-full h-screen flex justify-start items-center bg-[url("https://t4.ftcdn.net/jpg/03/08/41/21/360_F_308412175_yrqkHPciFF3Px259sqGx5qID4hrueUmT.jpg")] bg-center bg-cover flex-wrap gap-4'>
+    <div className='row justify-content-center mt-5 flex-grow-1 p-10 w-full min-h-screen flex bg-center bg-cover flex-wrap gap-4'>
       {
         events.map(event => <CardEvent key={event._id} data={event} />)
       }

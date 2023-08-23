@@ -5,6 +5,7 @@ import Home from './pages/Home';
 import { createBrowserRouter, RouterProvider, useNavigate } from 'react-router-dom';
 import Events from './pages/Events';
 import Componente404 from './pages/Componente404';
+import Event from './pages/Event';
 
 const router = createBrowserRouter([
   {
@@ -20,8 +21,8 @@ const router = createBrowserRouter([
         element: <Events />
       },
       {
-        path: '/events/:PropiedadPepito',
-        element: <Events />
+        path: '/event/:id',
+        element: <Event />
       },
       // {
       //   path: '/events/:id',
