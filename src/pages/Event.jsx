@@ -1,15 +1,23 @@
 import React, { useEffect, useState } from 'react'
 import { useParams } from 'react-router-dom'
 import { server } from '../utils/axios'
+import { useDispatch, useSelector } from 'react-redux'
+import { getEventAsync } from '../redux/actions/eventsActions'
 
 const Event = () => {
     const { id } = useParams()
-    const [event, setEvent] = useState({})
+    // const [event, setEvent] = useState({})
+    const dispatch = useDispatch()
+    const { event, loading } = useSelector(store => store.eventsReducer)
     useEffect(() => {
-        server.get('/events/' + id)
-            .then(res => setEvent(res.data.response))
-            .catch(err => console.log(err))
+
+        dispatch(getEventAsync({ id }))
+
     }, [])
+
+    if (loading) {
+        return <h1 className='text-6xl text-white'> Loading ...</h1>
+    }
 
     return (
         <main className="row justify-content-center gap-3 flex-grow-1 max-h-[80vh] mt-8 min-w-[80vw]">

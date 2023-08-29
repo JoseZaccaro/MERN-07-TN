@@ -3,8 +3,8 @@ import { Link } from 'react-router-dom';
 
 const CardEvent = ({ data }) => {
     const { name, image, price, category, _id } = data
-    console.log(_id)
-    console.log(data);
+    // console.log(_id)
+    // console.log(data);
     return (
         <div className="card border-secondary pt-3 col-10 col-md-5 col-xl-3">
             <img className="card-img-top w-100 h-50" src={image} alt="Title" />
