@@ -16,8 +16,8 @@ const links = [
 
 const MainLayout = () => {
     // const navigate = useNavigate()
-    const location = useLocation()
-    console.log(location);
+    // const location = useLocation()
+    // console.log(location);
     // useEffect(() => {
     //     if (location.pathname === '/') navigate('/home')
     // }, [])
