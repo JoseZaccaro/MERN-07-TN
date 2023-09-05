@@ -6,6 +6,8 @@ import { createBrowserRouter, RouterProvider, useNavigate } from 'react-router-d
 import Events from './pages/Events';
 import Componente404 from './pages/Componente404';
 import Event from './pages/Event';
+import SignUp from './pages/SignUp';
+import SignIn from './pages/SignIn';
 
 const router = createBrowserRouter([
   {
@@ -23,6 +25,14 @@ const router = createBrowserRouter([
       {
         path: '/event/:id',
         element: <Event />
+      },
+      {
+        path: '/signup',
+        element: <SignUp />
+      },
+      {
+        path: '/signin',
+        element: <SignIn />
       },
       // {
       //   path: '/events/:id',

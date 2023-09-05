@@ -9,8 +9,8 @@ import Clock from './Clock.jsx'
 const links = [
     { value: '/', content: 'Home', id: '1', active: true },
     { value: '/events', content: 'Events', id: '2', active: false },
-    { value: '/algo', content: 'Link 3', id: '3', active: false },
-    { value: '/algo2', content: 'Link 4', id: '4', active: false },
+    { value: '/signup', content: 'Sign up', id: '3', active: false },
+    { value: '/signin', content: 'Sign in', id: '4', active: false },
 ]
 
 const Header = () => {
